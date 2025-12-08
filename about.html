@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Umair Afridi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav>
+        <div class="logo">Umair<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button id="theme-btn">Switch</button>
+        </ul>
+    </nav>
+    <section class="container page-transition">
+        <div class="split-wrapper">
+            <div class="blob-container"><img src="me.jpg.png" class="blob-img"></div>
+            <div class="text-card">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">Who is <span style="color:var(--accent);">Umair?</span></h2>
+                <p style="margin-bottom:15px; color:var(--text-secondary); line-height:1.7;">
+                    I am a <strong>Full Stack Developer</strong> and <strong>Visual Designer</strong> based in Pakistan, with a passion for building digital products that live on the internet. I have a knack for turning complex problems into simple, beautiful, and intuitive designs.
+                </p>
+                <p style="margin-bottom:15px; color:var(--text-secondary); line-height:1.7;">
+                    My journey started with a curiosity for how things work, which led me to master technologies like <strong>Java, React, and Three.js</strong>. Today, I help businesses scale by creating high-performance websites and engaging brand identities.
+                </p>
+                <div style="display:flex; gap:30px; margin-top:30px; border-top:1px solid var(--border-color); padding-top:20px;">
+                    <div><h3 style="color:var(--text-main); font-size:2rem;">3+</h3><p>Years Experience</p></div>
+                    <div><h3 style="color:var(--text-main); font-size:2rem;">50+</h3><p>Projects Done</p></div>
+                    <div><h3 style="color:var(--text-main); font-size:2rem;">20+</h3><p>Happy Clients</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
