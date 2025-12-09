@@ -1,11 +1,24 @@
 // script.js - Final Logic
 const themeBtn = document.getElementById('theme-btn');
 const html = document.documentElement;
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-// Theme Logic
+// 1. MOBILE MENU TOGGLE
+if(hamburger) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+// Close menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+});
+
+// 2. THEME LOGIC
 const saved = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', saved);
-if(themeBtn) themeBtn.innerText = saved === 'dark' ? '☀️ Light' : '🌙 Dark';
+if(themeBtn) themeBtn.innerText = saved === 'dark' ? '☀️' : '🌙';
 
 if(themeBtn) {
     themeBtn.addEventListener('click', () => {
@@ -13,11 +26,11 @@ if(themeBtn) {
         const next = current === 'dark' ? 'light' : 'dark';
         html.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
-        themeBtn.innerText = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+        themeBtn.innerText = next === 'dark' ? '☀️' : '🌙';
     });
 }
 
-// Page Transitions (Random)
+// 3. PAGE TRANSITIONS
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', e => {
@@ -32,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 window.addEventListener('pageshow', (e) => { if(e.persisted) document.body.classList.remove('page-exit'); });
 
-// 3D Background
+// 4. 3D BACKGROUND
 const init3D = () => {
     const canvas = document.querySelector('#bg-canvas');
     if(!canvas) return;

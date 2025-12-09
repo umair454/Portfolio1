@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects | Umair Afridi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umair | Projects</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -10,6 +11,7 @@
     <canvas id="bg-canvas"></canvas>
     <nav>
         <div class="logo">Umair<span>.</span></div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
@@ -21,63 +23,55 @@
     </nav>
     <section class="container page-transition" style="flex-direction: column;">
         <h1 class="section-title">Selected <span>Work</span></h1>
-        
         <div class="projects-grid">
-            
             <div class="project-card">
                 <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800" class="project-img-real"></div>
                 <div class="project-content">
                     <h3>TechGear E-Commerce</h3>
-                    <p>A scalable shopping platform with secure payments and admin dashboard.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">React</span><span class="tech-tag">Java Spring</span><span class="tech-tag">AWS</span></div>
+                    <p>Scalable shopping platform with secure payments.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">React</span><span class="tech-tag">Java</span></div>
                 </div>
             </div>
-
             <div class="project-card">
                 <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" class="project-img-real"></div>
                 <div class="project-content">
-                    <h3>AI Content Generator</h3>
-                    <p>SaaS application leveraging OpenAI API to generate marketing copy.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">Python</span><span class="tech-tag">Next.js</span><span class="tech-tag">OpenAI</span></div>
+                    <h3>AI Content Tool</h3>
+                    <p>SaaS app using OpenAI API for marketing.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">Python</span><span class="tech-tag">Next.js</span></div>
                 </div>
             </div>
-
+            <div class="project-card">
+                <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" class="project-img-real"></div>
+                <div class="project-content">
+                    <h3>3D ArchViz</h3>
+                    <p>Interactive real-time architectural walkthrough.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">Three.js</span><span class="tech-tag">WebGL</span></div>
+                </div>
+            </div>
             <div class="project-card">
                 <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800" class="project-img-real"></div>
                 <div class="project-content">
                     <h3>NFT Marketplace</h3>
-                    <p>Web3 platform for minting and trading digital assets on Ethereum.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">Solidity</span><span class="tech-tag">Web3.js</span><span class="tech-tag">React</span></div>
+                    <p>Web3 platform for minting and trading assets.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">Solidity</span><span class="tech-tag">React</span></div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" class="project-img-real"></div>
-                <div class="project-content">
-                    <h3>ArchViz 3D Experience</h3>
-                    <p>Interactive real-time architectural walkthrough for real estate.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">Three.js</span><span class="tech-tag">WebGL</span><span class="tech-tag">Blender</span></div>
-                </div>
-            </div>
-
             <div class="project-card">
                 <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" class="project-img-real"></div>
                 <div class="project-content">
                     <h3>FinTech Dashboard</h3>
-                    <p>Data visualization dashboard for tracking crypto and stock assets.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">Vue.js</span><span class="tech-tag">D3.js</span><span class="tech-tag">Firebase</span></div>
+                    <p>Data visualization for crypto assets.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">Vue.js</span><span class="tech-tag">D3.js</span></div>
                 </div>
             </div>
-
-             <div class="project-card">
+            <div class="project-card">
                 <div class="project-img-wrapper"><img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800" class="project-img-real"></div>
                 <div class="project-content">
-                    <h3>Nexus Brand Identity</h3>
-                    <p>Complete corporate rebranding, logo design, and UI kit.</p>
-                    <div style="margin:10px 0;"><span class="tech-tag">Photoshop</span><span class="tech-tag">Illustrator</span><span class="tech-tag">Figma</span></div>
+                    <h3>Nexus Brand</h3>
+                    <p>Complete corporate rebranding identity.</p>
+                    <div style="margin-top:10px;"><span class="tech-tag">Photoshop</span><span class="tech-tag">Figma</span></div>
                 </div>
             </div>
-
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>

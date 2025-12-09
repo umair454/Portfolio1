@@ -3,45 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umair Afridi | Creative Developer</title>
+    <title>Umair | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 16px;
-            background: rgba(var(--accent), 0.1);
-            border: 1px solid var(--border-color);
-            border-radius: 30px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-        }
-        .status-dot {
-            height: 8px; width: 8px;
-            background-color: #00ff88; /* Green for 'Available' */
-            border-radius: 50%;
-            margin-right: 10px;
-            box-shadow: 0 0 10px #00ff88;
-        }
-        /* Home Text Improvements */
-        .home-text h1 { font-size: 5.5rem; letter-spacing: -2px; line-height: 1.1; margin-bottom: 20px; }
-        .hero-subtitle { font-size: 1.3rem; line-height: 1.6; color: var(--text-secondary); max-width: 550px; margin-bottom: 40px; }
-        
-        @media(max-width: 900px) {
-            .home-text h1 { font-size: 3.5rem; }
-            .hero-subtitle { font-size: 1.1rem; }
-        }
-    </style>
 </head>
 <body>
     <canvas id="bg-canvas"></canvas>
-
     <nav>
         <div class="logo">Umair<span>.</span></div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -52,33 +22,21 @@
         </ul>
     </nav>
 
-    <section class="container page-transition" style="flex-direction: column; justify-content: flex-start; padding-top: 150px;">
-        
+    <section class="container page-transition" style="flex-direction: column; justify-content: flex-start;">
         <div class="home-wrapper">
             <div class="home-text">
-                <div class="status-badge">
-                    <span class="status-dot"></span> Available for new projects
-                </div>
-
-                <h1>Building <br><span style="background: var(--accent-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Digital</span> Future</h1>
-                
-                <p class="hero-subtitle">
-                    I am <strong>Umair Afridi</strong>. A creative Technologist & Designer transforming ideas into high-performance web experiences.
-                </p>
-
-                <div style="display: flex; gap: 20px;">
-                    <a href="projects.html" class="btn">View Latest Work</a>
-                    <a href="contact.html" class="btn btn-outline">Let's Talk</a>
+                <div class="status-badge"><span class="status-dot"></span> Available for new projects</div>
+                <h1>Building <br><span>Digital</span> Future</h1>
+                <p style="margin-bottom:30px; font-size:1.2rem;">I am Umair Afridi. A creative Technologist transforming ideas into high-performance web experiences.</p>
+                <div style="display:flex; gap:15px;">
+                    <a href="projects.html" class="btn">View Work</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-
-            <div class="blob-container">
-                <img src="me.jpg.png" alt="Umair Afridi" class="blob-img">
-            </div>
+            <div class="blob-container"><img src="me.jpg.png" class="blob-img"></div>
         </div>
 
-        <div class="tech-marquee-section" style="margin-top: 100px; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
-            
+        <div class="tech-marquee-section" style="margin-top:80px; width:100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
             <div class="marquee-row">
                 <div class="marquee-track">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="tech-logo-img">
@@ -87,14 +45,6 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="tech-logo-img">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="tech-logo-img">
-
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="tech-logo-img">
@@ -103,7 +53,6 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="tech-logo-img">
                 </div>
             </div>
-
             <div class="marquee-row">
                 <div class="marquee-track reverse-track">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-logo-img">
@@ -112,14 +61,6 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="tech-logo-img">
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="tech-logo-img">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="tech-logo-img">
-
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-logo-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="tech-logo-img">
@@ -128,10 +69,8 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="tech-logo-img">
                 </div>
             </div>
-
         </div>
     </section>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
